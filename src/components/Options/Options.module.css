@@ -1,0 +1,12 @@
+.boxOptions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgb(149, 66, 182);
+    width: 70px;
+    height: 30px;
+    border-radius: 6px;
+}

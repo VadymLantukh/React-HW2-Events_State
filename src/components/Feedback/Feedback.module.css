@@ -1,0 +1,14 @@
+.feedbackList {
+    display: flex;
+    gap: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 100, 112);
+    border-radius: 8px;
+    height: 30px;
+    padding: 10px;
+}   

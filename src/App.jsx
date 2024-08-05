@@ -22,11 +22,7 @@ function App() {
   };
 
   const resetFeedback = () => {
-    const resetState = Object.keys(feedback).reduce((acc, key) => {
-      acc[key] = 0;
-      return acc;
-    }, {});
-    setFeedback(resetState);
+    setFeedback({ good: 0, neutral: 0, bad: 0 });
   };
 
   const totalFeedback = feedback.good + feedback.neutral + feedback.bad;

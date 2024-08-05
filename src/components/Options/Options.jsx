@@ -1,6 +1,8 @@
+import css from './Options.module.css'
+
 const Options = ({ options, updateFeedback, totalFeedback, resetFeedback }) => {
   return (
-    <div>
+    <div className={css.boxOptions}>
       {Object.keys(options).map(option => (
         <button key={option} onClick={() => updateFeedback(option)}>
           {option}
