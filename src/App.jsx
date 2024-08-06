@@ -33,19 +33,19 @@ function App() {
     <>
       <Description />
       <Options
-        onOptions={feedback}
-        onUpdateFeedback={updateFeedback}
-        onTotalFeedback={totalFeedback}
-        onResetFeedback={resetFeedback}
+        options={feedback}
+        updateFeedback={updateFeedback}
+        totalFeedback={totalFeedback}
+        resetFeedback={resetFeedback}
       />
       {totalFeedback > 0 ? (
         <Feedback
-          onFeedback={feedback}
-          onTotalFeedback={totalFeedback}
-          onPositiveFeedback={positiveFeedback}
+          feedback={feedback}
+          totalFeedback={totalFeedback}
+          positiveFeedback={positiveFeedback}
         />
       ) : (
-        <Notification onMessage={'No feedback yet'} />
+        <Notification message={'No feedback yet'} />
       )}
     </>
   );

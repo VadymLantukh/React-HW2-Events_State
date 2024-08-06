@@ -1,4 +1,4 @@
-import css from './Feedback.module.css'
+import css from './Feedback.module.css';
 
 const Feedback = ({ feedback, totalFeedback, positiveFeedback }) => {
   return (
@@ -10,7 +10,6 @@ const Feedback = ({ feedback, totalFeedback, positiveFeedback }) => {
           </span>
         </li>
       ))}
-
       <li>Total feedback: {totalFeedback}</li>
       <li>Positive feedback: {positiveFeedback}%</li>
     </ul>
